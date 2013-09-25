@@ -1,5 +1,7 @@
 ﻿define(['plugins/router'], function (router) {
 
+    router.updateHashFragment("#!/");
+
     // Redirecting from / to first route
     router.guardRoute = function(routeInfo, params, instance){
         if (params.fragment === ''){
