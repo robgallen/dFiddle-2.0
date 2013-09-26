@@ -2,7 +2,7 @@
     var childRouter = router.createChildRouter()
         .makeRelative({
             moduleId: 'masterDetail',
-            route: 'master-detail'
+            fromParent: true
         }).map([
             {
                 type: 'intro',
