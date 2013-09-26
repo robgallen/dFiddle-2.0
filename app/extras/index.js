@@ -2,7 +2,7 @@
     var childRouter = router.createChildRouter()
         .makeRelative({
             moduleId: 'extras',
-            route: 'extras'
+            fromParent: true
         }).map([
             {
                 type: 'fiddle',
