@@ -2,7 +2,7 @@
     var childRouter = router.createChildRouter()
       .makeRelative({
            moduleId: 'modal',
-           route: 'modal'
+           fromParent: true
        }).map([
           {
               type: 'intro',
