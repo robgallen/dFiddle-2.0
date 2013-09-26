@@ -2,7 +2,7 @@
     var childRouter = router.createChildRouter()
       .makeRelative({
            moduleId: 'viewComposition',
-           route: 'view-composition'
+           fromParent: true
        }).map([
           {
               type: 'intro',
