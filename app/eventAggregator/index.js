@@ -1,10 +1,8 @@
 ﻿define(['plugins/router', 'global', 'knockout'], function( router, global, ko ) {
-    router.updateHashFragment("#!/");
-    
     var childRouter = router.createChildRouter()
       .makeRelative({
            moduleId: 'eventAggregator',
-           route: 'event-aggregator'
+           fromParent: true
        }).map([
           {
               type: 'intro',
